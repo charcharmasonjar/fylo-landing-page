@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  padding: 0;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -9,6 +8,7 @@ body {
   color: hsl(0, 0%, 100%);
   text-align: center;
   line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -188,13 +188,13 @@ h2 {
   line-height: 1.75;
 }
 
-.testimonials footer {
+.testimonials .card-footer {
   display: flex;
   align-items: center;
   padding-top: 10px;
 }
 
-.testimonials footer img {
+.testimonials .card-footer img {
   height: 23px;
   width: auto;
   border-radius: 50%;
@@ -216,9 +216,11 @@ form {
   align-items: center;
   background-color: hsl(217, 28%, 15%);
   height: 350px;
-  margin: 150px 20px 50px 20px;
+  margin: 150px 20px 0px 20px;
   border-radius: 10px;
   padding: 40px 30px 35px;
+  box-shadow: 3px 3px 8px rgb(18, 18, 18);
+  position: relative;
 }
 
 form button, form input {
@@ -230,6 +232,7 @@ form button, form input {
   border-radius: 30px;
   text-decoration: none;
   border: none;
+
 }
 
 form button {
@@ -244,4 +247,18 @@ form input {
   width: 100%;
   padding-left: 30px;
   margin-top: 10px;
+}
+
+form::after {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  height: 50%;
+  width: 100vw;
+  content: '';
+  background-color: hsl(216, 53%, 9%);
+}
+
+footer {
+  background-color: hsl(216, 53%, 9%);
 }
