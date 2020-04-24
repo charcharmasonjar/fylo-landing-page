@@ -16,6 +16,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
+h2 {
+  font-size: 1.5rem;
+}
+
 p {
   font-size: 14px;
 }
@@ -60,8 +64,13 @@ main {
 }
 
 .intro-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   z-index: 10;
+  max-width: 500px;
+  margin: auto;
 }
 
 .intro-background {
@@ -78,13 +87,9 @@ main {
 .intro-background::after {
   width: 100vw;
   background-color: hsl(218, 28%, 13%);
-  height: 150px;
+  height: 270px;
   content: '';
   display: block;
-}
-
-h2 {
-  font-size: 1.5rem;
 }
 
 .intro-content h2 {
@@ -98,6 +103,7 @@ h2 {
   justify-content: center;
   align-items: center;
   height: 50px;
+  width: 200px;
   margin: 30px;
   border-radius: 30px;
   font-family: 'Raleway', sans-serif;
@@ -108,9 +114,13 @@ h2 {
 
 .info {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  max-width: 900px;
   margin-top: 50px;
+  margin: auto;
 }
 
 .info-group {
@@ -133,8 +143,22 @@ h2 {
 }
 
 .productive {
+  display: flex;
+  flex-wrap: wrap;
   padding: 90px 25px 30px 30px;
   text-align: left;
+  justify-content: space-around;
+}
+
+.productive > img {
+  max-width: 615px;
+}
+
+.productive-content {
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .productive h2 {
@@ -164,9 +188,12 @@ h2 {
 
 .testimonials {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   padding-top: 110px;
+  margin: auto;
 }
 
 .testimonials > img {
@@ -209,6 +236,11 @@ h2 {
   font-size: 0.5rem;
 }
 
+.form-container {
+  padding: 150px 20px 0px 20px;
+  width: 100%;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -216,11 +248,12 @@ form {
   align-items: center;
   background-color: hsl(217, 28%, 15%);
   height: 350px;
-  margin: 150px 20px 0px 20px;
   border-radius: 10px;
   padding: 40px 30px 35px;
   box-shadow: 3px 3px 8px rgb(18, 18, 18);
   position: relative;
+  max-width: 860px;
+  margin: auto;
 }
 
 form button, form input {
@@ -232,7 +265,14 @@ form button, form input {
   border-radius: 30px;
   text-decoration: none;
   border: none;
+}
 
+.form-submit {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
 }
 
 form button {
@@ -241,12 +281,12 @@ form button {
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
   font-weight: 700;
+  max-width: 270px;
 }
 
 form input {
-  width: 100%;
   padding-left: 30px;
-  margin-top: 10px;
+  max-width: 480px;
 }
 
 form::after {
