@@ -277,6 +277,7 @@ footer .logo {
 .contact {
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
 }
 
 .contact-group {
@@ -299,4 +300,24 @@ footer .logo {
 
 .contact-group:first-child p {
   font-size: 1rem;
+}
+
+footer ul {
+  margin-bottom: 30px;
+}
+
+footer li {
+  margin-bottom: 20px;
+}
+
+footer li a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+.attribution {
+  font-size: 0.7rem;
+}
+.attribution a {
+  color: hsl(0, 0%, 100%);
 }
