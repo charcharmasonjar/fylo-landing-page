@@ -161,3 +161,51 @@ h2 {
   width: 20px;
   padding-left: 5px;
 }
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 110px;
+}
+
+.testimonials > img {
+  height: 20px; 
+  width: auto;
+}
+
+.testimonials .card {
+  width: 300px;
+  background-color: hsl(219, 30%, 18%);
+  text-align: left;
+  padding: 30px 30px 20px 20px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.testimonials p {
+  font-size: 0.65rem;
+  line-height: 1.75;
+}
+
+.testimonials footer {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.testimonials footer img {
+  height: 23px;
+  width: auto;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.testimonials .name {
+  font-weight: 700;
+}
+
+.testimonials .title {
+  font-size: 0.5rem;
+}
+
