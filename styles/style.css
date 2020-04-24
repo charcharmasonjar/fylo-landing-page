@@ -315,9 +315,31 @@ footer li a {
   text-decoration: none;
 }
 
+.social {
+  display: flex;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 27px;
+  width: 27px;
+  margin: 5px;
+  font-size: 14px;
+  padding-top: 1px;
+  padding-left: 1px;
+}
+
 .attribution {
   font-size: 0.7rem;
 }
+
 .attribution a {
   color: hsl(0, 0%, 100%);
 }
