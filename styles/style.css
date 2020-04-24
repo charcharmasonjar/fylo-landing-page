@@ -33,7 +33,7 @@ nav {
   width: 100%;
   background-color: hsl(217, 28%, 15%);
   font-family: 'Raleway', sans-serif;
-  padding: 20px 25px 20px 20px;
+  padding: 25px 25px 20px 20px;
   font-size: 0.73rem;
 }
 
@@ -58,15 +58,38 @@ main {
 .intro {
   background-color: hsl(217, 28%, 15%);
   padding: 30px;
+  position: relative;
+}
+
+.intro-info {
+  position: relative;
+  z-index: 10;
 }
 
 .intro-background {
-  /* z-index: 1; */
-  /* position: relative; */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: auto;
+}
+
+.intro-background > img {
+  display: block;
+}
+
+.intro-background::after {
+  width: 100vw;
+  background-color: hsl(218, 28%, 13%);
+  height: 150px;
+  content: '';
+  display: block;
 }
 
 h2 {
   font-size: 1.5rem;
-  line-height: 1.5;
 }
+
+
+
+
 
