@@ -20,7 +20,6 @@ p {
   font-size: 14px;
 }
 
-
 img {
   height: 100%;
   width: 100%;
@@ -61,7 +60,7 @@ main {
   position: relative;
 }
 
-.intro-info {
+.intro-content {
   position: relative;
   z-index: 10;
 }
@@ -89,7 +88,21 @@ h2 {
   font-size: 1.5rem;
 }
 
+.intro-content h2 {
+  padding: 20px 0px;
+}
 
-
-
-
+.intro-content a {
+  background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin: 30px;
+  border-radius: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
