@@ -261,4 +261,42 @@ form::after {
 
 footer {
   background-color: hsl(216, 53%, 9%);
+  padding: 65px 25px 30px 30px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  width: 100%
+}
+
+footer .logo {
+  width: 180px;
+  height: auto;
+  margin-bottom: 30px
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-group {
+  display: flex;
+  padding: 10px 0px;
+}
+
+.contact-icon {
+  width: 50px;
+}
+
+.contact-icon img {
+  height: 15px;
+  width: auto;
+}
+
+.contact-group p {
+  width: 100%;
+}
+
+.contact-group:first-child p {
+  font-size: 1rem;
 }
