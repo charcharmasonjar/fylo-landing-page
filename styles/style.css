@@ -209,3 +209,39 @@ h2 {
   font-size: 0.5rem;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(217, 28%, 15%);
+  height: 350px;
+  margin: 150px 20px 50px 20px;
+  border-radius: 10px;
+  padding: 40px 30px 35px;
+}
+
+form button, form input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  border-radius: 30px;
+  text-decoration: none;
+  border: none;
+}
+
+form button {
+  background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  color: hsl(0, 0%, 100%);
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+form input {
+  width: 100%;
+  padding-left: 30px;
+  margin-top: 10px;
+}
