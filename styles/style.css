@@ -153,7 +153,7 @@ main {
   flex-wrap: wrap;
   padding: 90px 25px 30px 30px;
   text-align: left;
-  justify-content: space-around;
+  justify-content: center;;
 }
 
 .productive > img {
@@ -189,7 +189,8 @@ main {
 
 .productive a img {
   width: 20px;
-  padding-left: 5px;
+  height: 20px;
+  margin-left: 5px;
 }
 
 .testimonials {
@@ -437,6 +438,16 @@ footer li a {
     font-size: 40px;
     max-width: 375px;
   }
+
+  .productive p, .productive a {
+    font-size: 16px;
+  }
+
+  .productive-content {
+    margin-left: 60px;
+  }
+
+
 
 
 }
