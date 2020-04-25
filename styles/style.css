@@ -33,17 +33,18 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100px;
   width: 100%;
-  background-color: hsl(217, 28%, 15%);
+  padding: 25px 25px 25px 20px;
   font-family: 'Raleway', sans-serif;
-  padding: 25px 25px 20px 20px;
   font-size: 0.73rem;
+  background-color: hsl(217, 28%, 15%);
 }
 
 nav > ul {
   display: flex;
   justify-content: space-between;
-  width: 45vw;
+  width: 175px;
 }
 
 nav > img {
@@ -59,7 +60,7 @@ main {
 
 .intro {
   background-color: hsl(217, 28%, 15%);
-  padding: 30px;
+  padding: 0px 35px;
   position: relative;
 }
 
@@ -314,6 +315,11 @@ footer .logo {
   margin-bottom: 30px
 }
 
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -344,6 +350,7 @@ footer .logo {
 
 footer ul {
   margin-bottom: 30px;
+  width: 100%;
 }
 
 footer li {
@@ -382,4 +389,22 @@ footer li a {
 
 .attribution a {
   color: hsl(0, 0%, 100%);
+}
+
+@media (min-width: 1024px) {
+  nav {
+    height: 200px;
+    padding: 80px 70px;
+    font-size: 14px;
+  }
+  nav > ul {
+    width: 275px;
+  }
+
+  nav > img {
+    height: 50px;
+    width: auto;
+  }
+
+
 }
