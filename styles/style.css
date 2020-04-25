@@ -280,6 +280,7 @@ form button, form input {
   flex-wrap: wrap;
   width: 100%;
   align-items: center;
+  justify-content: space-between
 }
 
 form button {
@@ -447,6 +448,26 @@ footer li a {
     margin-left: 60px;
   }
 
+  form {
+    height: 275px;
+    padding: 35px 75px
+  }
+
+  form h3 {
+    font-size: 30px;
+  }
+
+  form p {
+    max-width: 620px;
+  }
+
+  input {
+    max-width: 480px;
+  }
+
+  form button {
+    width: 200px;
+  }
 
 
 
