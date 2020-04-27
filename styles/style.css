@@ -325,30 +325,29 @@ footer .logo {
 
 .contact {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin-bottom: 50px;
 }
 
 .contact-group {
   display: flex;
   padding: 10px 0px;
+  width: 300px;
+}
+
+.contact-group.location p {
+  font-size: 1rem;
+  width: 100%;
 }
 
 .contact-icon {
-  width: 50px;
+  width: 35px;
 }
 
 .contact-icon img {
   height: 15px;
   width: auto;
-}
-
-.contact-group p {
-  max-width: 350px;
-}
-
-.contact-group:first-child p {
-  font-size: 1rem;
 }
 
 footer ul {
@@ -472,6 +471,10 @@ footer li a {
     width: 200px;
   }
 
+  footer {
+    padding: 80px 80px 80px 120px
+  }
+
   footer ul {
     width: 150px;
   }
@@ -480,6 +483,9 @@ footer li a {
     margin: 0;
   }
 
-  .footer-content {
+  .contact-group.location {
+    width: 460px;
+    padding-right: 100px;
   }
+
 }
