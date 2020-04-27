@@ -472,6 +472,7 @@ footer li a {
   }
 
   footer {
+    height: 400px;
     padding: 80px 80px 80px 120px
   }
 
